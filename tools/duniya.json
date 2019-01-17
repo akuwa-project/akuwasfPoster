@@ -1,0 +1,26 @@
+{
+	"commune": {
+		"zone1": ["Karimama", "Malanville"],
+		"zone2": ["Segbana", "Gogounou","Kandi","Kerou", "Banikoara"],
+		"zone3": ["N'Dali", "Nikki","Kalale","Sinende","Pehunco","Bembereke","Kouande","Perere"],
+		"zone4": ["Cobly", "Materi","Ouake","Boukoumbe","Tanguieta","Natitingou","Djougou","Toucountouna","Copargo"],
+		"zone5": ["Bassila", "Parakou","Tchaourou","Ouesse","Bante","Save","Savalou","Glazoue","Ketou","Djidja","Dassa-Zoume","Aplahoue"],
+		"zone6": ["Abomey-Calavi", "Allada","Kpomasse","Tori-Bossito","Ze","Djakotome","Dogbo","Klouekanme",
+			"Houeyogbe","Toviklin","Adjarra","Ifangni","AKPRO-Misserete","Avrankou","Porto-Novo","Sakete","Abomey",
+			"Agbangnizoun","Bohicon","Cove","Za-kpota","Zagnanado"],
+		"zone7": ["Adja-Ouere", "Pobe","Toffo","Lalo","Zogbodomey"],
+		"zone8": ["Athieme", "Grand-Popo","Bopa","Come","Lokossa","Ouidah","SO-Ava",
+			"Seme-KPodji","Aguegues","Dangbo","Adjohoun","Bonou","Ouinhi","Cotonou"]
+
+	},
+	"produit": {
+		"zone1": "Mil,Sorgho,Coton,Maïs,Riz,Oignon,Pomme de terre,Boeuf,Poisson",
+		"zone2": "Sorgho,Igname,Maïs,Coton",
+		"zone3": "Coton,Igname,Maïs,Anacarde",
+		"zone4": "Céréales,Igname",
+		"zone5": "Tubercules,Coton",
+		"zone6": "Maïs,Manioc,Niébé,Arachide",
+		"zone7": "Maïs,Tomate,Niébé",
+		"zone8": "Poisson,Maïs,Manioc,Niébé"
+	}
+}
