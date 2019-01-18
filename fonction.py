@@ -42,17 +42,29 @@ def connect_to_db(db):
     si elle n'existe pas elle sera cree"""
     db = mongo_client[db]
     # retourne la connection a la base de donnee si la connexion au serveur mongodb a ete bien etabli
-    return db
+    #return db
+    return mongo_client
 
-def save_ong(context):
+def save_ong(audit):
     """
     save ong json object to mongodb server
     :param ong:
     :return:
     """
-    db = connect_to_db('context')
-    col = db['context']
-    return col.insert_one(context)
+    parameters_file = "tools/parametres.json"
+    with open(parameters_file, 'r') as fich_p:
+        parameters = json.loads(fich_p.read())
+        mongo_url = parameters['mongodb']['url']
+        # mongo_client = pymongo.MongoClient(mongo_url)
+
+    client = pymongo.MongoClient(mongo_url)
+    data_base = client['duniya']
+    return data_base.audit.save(audit)
+
+    # db = connect_to_db('context')
+    # col = db['context']
+    # # return col.insert_one(context)
+    # return col.save(context)
 
 
 def create_context():
@@ -73,5 +85,9 @@ def create_context():
         "destinatorLayer": context_result['destinatorLayer']
     }
     save_ong(context_to_mongo)
+    #return json.dumps(context_to_mongo)
+    #save_ong(context_to_mongo)
     return context_to_mongo
+    #return connect_to_db('context')
+
 
