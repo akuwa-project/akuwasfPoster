@@ -24,7 +24,7 @@ def main():
     initialize_app(app)
     # log.info('>>>>> Starting development server at http://{}/api/ <<<<<'.format(app.config['SERVER_NAME']))
     #app.run(debug=True)
-    app.run(host='0.0.0.0', port='8888', debug=True)
+    app.run(host='0.0.0.0', port='8888', debug=False)
 
 
 

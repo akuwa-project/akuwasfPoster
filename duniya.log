@@ -410,3 +410,65 @@ TypeError: Object of type 'MongoClient' is not JSON serializable
 [INFO] 01/18/2019 11:36:01 AM  "127.0.0.1 - - [18/Jan/2019 11:36:01] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 -"
 [INFO] 01/18/2019 11:36:01 AM  "127.0.0.1 - - [18/Jan/2019 11:36:01] "GET /swagger-ui.html/swagger.json HTTP/1.1" 200 -"
 [INFO] 01/18/2019 11:36:06 AM  "127.0.0.1 - - [18/Jan/2019 11:36:06] "POST /swagger-ui.html/audit/audits HTTP/1.1" 201 -"
+[INFO] 01/24/2019 08:18:48 AM  " * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)"
+[INFO] 01/24/2019 08:19:44 AM  "127.0.0.1 - - [24/Jan/2019 08:19:44] "GET /swagger-ui.html HTTP/1.1" 301 -"
+[INFO] 01/24/2019 08:19:44 AM  "127.0.0.1 - - [24/Jan/2019 08:19:44] "GET /swagger-ui.html/ HTTP/1.1" 200 -"
+[INFO] 01/24/2019 08:19:44 AM  "127.0.0.1 - - [24/Jan/2019 08:19:44] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -"
+[INFO] 01/24/2019 08:19:44 AM  "127.0.0.1 - - [24/Jan/2019 08:19:44] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -"
+[INFO] 01/24/2019 08:19:44 AM  "127.0.0.1 - - [24/Jan/2019 08:19:44] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -"
+[INFO] 01/24/2019 08:19:44 AM  "127.0.0.1 - - [24/Jan/2019 08:19:44] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -"
+[INFO] 01/24/2019 08:19:45 AM  "127.0.0.1 - - [24/Jan/2019 08:19:45] "GET /swaggerui/favicon-16x16.png HTTP/1.1" 200 -"
+[INFO] 01/24/2019 08:19:45 AM  "127.0.0.1 - - [24/Jan/2019 08:19:45] "GET /swagger-ui.html/swagger.json HTTP/1.1" 200 -"
+[INFO] 01/24/2019 08:20:19 AM  "127.0.0.1 - - [24/Jan/2019 08:20:19] "GET /audit HTTP/1.1" 404 -"
+[INFO] 01/24/2019 08:20:19 AM  "127.0.0.1 - - [24/Jan/2019 08:20:19] "GET /favicon.ico HTTP/1.1" 404 -"
+[INFO] 01/24/2019 08:21:10 AM  "127.0.0.1 - - [24/Jan/2019 08:21:10] "GET /api HTTP/1.1" 404 -"
+[INFO] 02/01/2019 02:49:49 PM  " * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)"
+[INFO] 02/01/2019 02:50:49 PM  "127.0.0.1 - - [01/Feb/2019 14:50:49] "GET /swagger-ui.html HTTP/1.1" 301 -"
+[INFO] 02/01/2019 02:50:49 PM  "127.0.0.1 - - [01/Feb/2019 14:50:49] "GET /swagger-ui.html/ HTTP/1.1" 200 -"
+[INFO] 02/01/2019 02:50:49 PM  "127.0.0.1 - - [01/Feb/2019 14:50:49] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -"
+[INFO] 02/01/2019 02:50:49 PM  "127.0.0.1 - - [01/Feb/2019 14:50:49] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -"
+[INFO] 02/01/2019 02:50:49 PM  "127.0.0.1 - - [01/Feb/2019 14:50:49] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -"
+[INFO] 02/01/2019 02:50:49 PM  "127.0.0.1 - - [01/Feb/2019 14:50:49] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -"
+[INFO] 02/01/2019 02:50:50 PM  "127.0.0.1 - - [01/Feb/2019 14:50:50] "GET /swaggerui/favicon-16x16.png HTTP/1.1" 200 -"
+[INFO] 02/01/2019 02:50:50 PM  "127.0.0.1 - - [01/Feb/2019 14:50:50] "GET /swagger-ui.html/swagger.json HTTP/1.1" 200 -"
+[ERROR] 02/01/2019 02:51:35 PM  "Exception on /swagger-ui.html/audit/audits [POST]"
+Traceback (most recent call last):
+  File "/home/archange/.local/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/archange/.local/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/archange/.local/lib/python3.6/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/archange/.local/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/archange/.local/lib/python3.6/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/archange/PycharmProjects/audit_manger/api.py", line 22, in post
+    return fonction.create_context(),201
+  File "/home/archange/PycharmProjects/audit_manger/fonction.py", line 88, in create_context
+    save_ong(context_to_mongo)
+  File "/home/archange/PycharmProjects/audit_manger/fonction.py", line 62, in save_ong
+    return data_base.audit.save(audit)
+  File "/home/archange/.local/lib/python3.6/site-packages/pymongo/collection.py", line 3142, in save
+    collation=collation)
+  File "/home/archange/.local/lib/python3.6/site-packages/pymongo/collection.py", line 851, in _update_retryable
+    _update, session)
+  File "/home/archange/.local/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1247, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/usr/lib/python3.6/contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "/home/archange/.local/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1576, in _tmp_session
+    s = self._ensure_session(session)
+  File "/home/archange/.local/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1563, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/archange/.local/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1516, in __start_session
+    server_session = self._get_server_session()
+  File "/home/archange/.local/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1549, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/archange/.local/lib/python3.6/site-packages/pymongo/topology.py", line 427, in get_server_session
+    None)
+  File "/home/archange/.local/lib/python3.6/site-packages/pymongo/topology.py", line 199, in _select_servers_loop
+    self._error_message(selector))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused
+[INFO] 02/01/2019 02:51:35 PM  "127.0.0.1 - - [01/Feb/2019 14:51:35] "POST /swagger-ui.html/audit/audits HTTP/1.1" 500 -"
+[INFO] 02/01/2019 02:52:20 PM  "127.0.0.1 - - [01/Feb/2019 14:52:20] "POST /swagger-ui.html/audit/audits HTTP/1.1" 201 -"

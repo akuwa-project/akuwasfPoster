@@ -12,4 +12,5 @@ context_post = api.model('Context post', {
     'expeditorId': fields.String(required=True, description='expeditor Id'),
     'expeditorLayer': fields.String(required=True, description='expeditor layer'),
     'destinatorLayer': fields.String(required=True, description='destinator layer'),
+    'methode_type': fields.String(required=True, description='methode type'),
 })

@@ -82,7 +82,8 @@ def create_context():
         "methode_uri":context_result['methode_uri'],
         "expeditorId":context_result['expeditorId'],
         "expeditorLayer":context_result['expeditorLayer'],
-        "destinatorLayer": context_result['destinatorLayer']
+        "destinatorLayer": context_result['destinatorLayer'],
+        'methode_type': context_result['methode_type']
     }
     save_ong(context_to_mongo)
     #return json.dumps(context_to_mongo)
