@@ -1,6 +1,4 @@
 pymongo
-uuid
 flask
 flask_restplus
 api
-restful

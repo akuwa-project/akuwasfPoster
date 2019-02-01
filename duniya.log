@@ -472,3 +472,12 @@ Traceback (most recent call last):
 pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused
 [INFO] 02/01/2019 02:51:35 PM  "127.0.0.1 - - [01/Feb/2019 14:51:35] "POST /swagger-ui.html/audit/audits HTTP/1.1" 500 -"
 [INFO] 02/01/2019 02:52:20 PM  "127.0.0.1 - - [01/Feb/2019 14:52:20] "POST /swagger-ui.html/audit/audits HTTP/1.1" 201 -"
+[INFO] 02/01/2019 03:32:51 PM  " * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)"
+[INFO] 02/01/2019 03:33:06 PM  "127.0.0.1 - - [01/Feb/2019 15:33:06] "GET /swagger-ui.html/ HTTP/1.1" 200 -"
+[INFO] 02/01/2019 03:33:06 PM  "127.0.0.1 - - [01/Feb/2019 15:33:06] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -"
+[INFO] 02/01/2019 03:33:06 PM  "127.0.0.1 - - [01/Feb/2019 15:33:06] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -"
+[INFO] 02/01/2019 03:33:06 PM  "127.0.0.1 - - [01/Feb/2019 15:33:06] "GET /swaggerui/favicon-16x16.png HTTP/1.1" 200 -"
+[INFO] 02/01/2019 03:33:07 PM  "127.0.0.1 - - [01/Feb/2019 15:33:07] "GET /swagger-ui.html/swagger.json HTTP/1.1" 200 -"
+[INFO] 02/01/2019 03:33:14 PM  "127.0.0.1 - - [01/Feb/2019 15:33:14] "POST /swagger-ui.html/audit/audits HTTP/1.1" 201 -"
+[INFO] 02/01/2019 03:41:06 PM  "127.0.0.1 - - [01/Feb/2019 15:41:06] "POST /swagger-ui.html/audit/audits HTTP/1.1" 201 -"
+[INFO] 02/01/2019 03:42:08 PM  "127.0.0.1 - - [01/Feb/2019 15:42:08] "POST /swagger-ui.html/audit/audits HTTP/1.1" 201 -"
