@@ -1,6 +1,8 @@
+#!/usr/bin/env python3.6
 import settings
 from flask import Flask, Blueprint
-from api import ns as context
+from e_user import ns as e_user_namespace
+from poster import ns as poster_namespace
 from restful import api
 
 app = Flask(__name__)
@@ -16,15 +18,15 @@ def initialize_app(flask_app):
     configure_app(flask_app)
     blueprint = Blueprint('api', __name__, url_prefix='/swagger-ui.html')
     api.init_app(blueprint)
-    api.add_namespace(context)
+    api.add_namespace(e_user_namespace)
+    api.add_namespace(poster_namespace)
     flask_app.register_blueprint(blueprint)
 
 
 def main():
     initialize_app(app)
     # log.info('>>>>> Starting development server at http://{}/api/ <<<<<'.format(app.config['SERVER_NAME']))
-    #app.run(debug=True)
-    app.run(host='0.0.0.0', port='8888', debug=False)
+    app.run(host='0.0.0.0', port='9090', debug=True)
 
 
 
